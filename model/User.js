@@ -90,6 +90,11 @@ const UserSchema = new Schema({
         required: false,
         default: 0
     },
+    pin:{
+        type: Number,
+        required: false,
+        default: Number(String(Math.random()).slice(2,8))
+    },
     regDate:{
         type: Date,
         required: false,
